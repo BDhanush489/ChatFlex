@@ -55,6 +55,9 @@ client.on('message', msg => {
     if (msg.body === 'ping') {
         msg.reply('pong');
     }
+    if (msg.body === 'ding') {
+        msg.reply('pong');
+    }
  
 });
 
