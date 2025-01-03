@@ -1,0 +1,55 @@
+body {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: black;
+}
+
+.middle-gradient {
+    width: 50px;
+    height: 1024px;
+    right: 695px;
+    top: 0px;
+    position: absolute;
+    background: #09FF00;
+    box-shadow: 23px 0px 20px rgba(0, 0, 0, 0.25) inset;
+    filter: blur(140px)
+}
+
+.left-gradient {
+    width: 50px;
+    height: 1024px;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    background: #09FF00;
+    box-shadow: 23px 0px 20px rgba(0, 0, 0, 0.25) inset;
+    filter: blur(100.30px)
+}
+
+.right-gradient {
+    width: 50px;
+    height: 1024px;
+    right: 0px;
+    top: 0px;
+    position: absolute;
+    background: #09FF00;
+    box-shadow: 23px 0px 20px rgba(0, 0, 0, 0.25) inset;
+    filter: blur(110.30px)
+}
+
+.img-gradient {
+    width: 55px;
+    height: 150px;
+    right: 200px;
+    top: 50px;
+    position: absolute;
+    background: #09FF00;
+    box-shadow: 23px 0px 20px rgba(0, 0, 0, 0.25) inset;
+    filter: blur(70.30px)
+}
