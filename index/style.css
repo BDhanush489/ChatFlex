@@ -1,65 +1,71 @@
+::-webkit-scrollbar {
+    display: none;
+    /* Hides scrollbar in Chrome, Safari, and Edge */
+}
+
+html,
 body {
+    width: 100vw;
+    height: 100%;
+    /* Ensure full viewport height */
     margin: 0;
-    padding: 0;
     font-family: 'Poppins', sans-serif;
     background: #08101F;
     color: #fff;
+    box-sizing: border-box;
     overflow-x: hidden;
 }
 
+.navbar {
+    position: relative;
+    display: flex;
+    width: calc(100vw - 20rem);
+    height: 9rem;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 1rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
 
 .container {
-    width: 100%;
-    height: 100vh;
+    width: calc(100% - 6rem);
+    height: 32rem;
+    margin: 3rem;
+    /* padding-top: 2rem; */
     position: relative;
-    background: #08101F;
-}
-
-.landingImage {
-    width: 450px;
-    height: 420px;
-    left: 795px;
-    top: 205px;
-    position: absolute;
-    /* box-shadow: 10px 10px 4px black; */
-    border-radius: 43px;
-    /* border: 1px #1E1E1E solid */
-}
-
-.landingImage2 {
-    width: 100vw;
-    height: 959px;
-    left: 0px;
-    top: 20px;
-    opacity: 0.4;
-    position: absolute
+    justify-content: space-between;
+    /* background: #08101F; */
 }
 
 .logo {
     width: 150px;
-    height: 150px;
-    left: 124.45px;
-    top: 5px;
-    position: absolute;
-    border-radius: 112.50px
+    height: 140px;
 }
 
+.navigation {
+    display: flex;
+    /* justify-content: space-between; */
+    justify-content: flex-end;
+    gap: 13rem;
+    align-items: center;
+    height: 100%;
+    width: 48rem;
+}
+
+
+
 .Home {
-    left: 735px;
-    top: 65px;
-    position: absolute;
     color: #00EEFF;
     font-size: 25px;
     font-family: Roboto;
     font-weight: 400;
     letter-spacing: 0.70px;
-    word-wrap: break-word
+
 }
 
 .Working {
-    left: 918px;
-    top: 65px;
-    position: absolute;
+
     color: white;
     font-size: 25px;
     font-family: Roboto;
@@ -69,9 +75,7 @@ body {
 }
 
 .ContactUs {
-    left: 1136px;
-    top: 65px;
-    position: absolute;
+
     color: white;
     font-size: 25px;
     font-family: Roboto;
@@ -81,58 +85,226 @@ body {
 }
 
 
-.SmartResponsesSmarterConversations {
-    width: 582px;
-    left: 128px;
-    top: 220px;
-    position: absolute;
+/* 
+.Home,
+.Working,
+.ContactUs {
     color: white;
-    font-size: 49px;
+    font-size: 25px;
+    font-family: Roboto;
+    font-weight: 400;
+    letter-spacing: 0.70px;
+    text-align: center;
+ 
+}
+
+.Home {
+    color: #00EEFF;
+} */
+
+
+@media (max-width: 1800px) {
+    .navigation {
+        gap: 10rem;
+    }
+}
+
+@media (max-width: 1340px) {
+    .navigation {
+        gap: 7rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .navigation {
+        gap: 1rem;
+        padding-left: 0rem;
+        padding-right: 0rem;
+        margin: 0px;
+    }
+
+    .navbar {
+        width: 100vw;
+        height: 10rem;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
+
+}
+
+.LeftSide {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    height: 450px;
+    width: 40%;
+    padding-left: 150px;
+    /* padding-top: 30px; */
+}
+
+
+.SmartResponsesSmarterConversations {
+    color: white;
+    font-size: 40px;
     font-family: Roboto;
     font-weight: 500;
-    line-height: 62.50px;
+    line-height: 63px;
     letter-spacing: 1px;
     word-wrap: break-word
 }
 
 .landingPageText {
-    left: 203px;
-    top: 3229px;
-    position: absolute;
     color: white;
-    font-size: 30px;
+    font-size: 27px;
     font-family: Roboto;
     font-weight: 500;
-    line-height: 37.50px;
+    line-height: 38px;
     letter-spacing: 0.60px;
     word-wrap: break-word
 }
 
 .LandingText {
-    width: 549px;
-    left: 124px;
-    top: 390px;
-    position: absolute;
     color: white;
-    font-size: 30px;
+    font-size: 27px;
     font-family: Roboto;
     font-weight: 400;
     line-height: 33px;
     word-wrap: break-word
 }
 
-.Group7 {
-    width: 283px;
-    height: 72px;
-    left: 124px;
-    top: 530px;
-    position: absolute
+
+.HowItWorks {
+    position: relative;
+    color: white;
+    font-size: 25px;
+    font-family: Roboto;
+    font-weight: 400;
+    line-height: 27.50px;
+    word-wrap: break-word
 }
 
-.Group8 {
-    width: 236px;
-    height: 72px;
-    left: 437px;
-    top: 530px;
-    position: absolute
+.generateResponseButton {
+    width: 250px;
+    height: 70px;
+    position: relative;
+    background: linear-gradient(90deg, #23A7D0 0%, #28126A 100%);
+    border-radius: 80px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.howItWorksButton {
+    width: 250px;
+    height: 70px;
+    left: 300px;
+    position: absolute;
+    align-items: center;
+    text-align: center;
+    background: rgba(255, 255, 255, 0);
+    border-radius: 80px;
+    border: 1px #23A7D0 solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttonContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+    position: relative;
+    padding-top: 50px;
+}
+
+.buttonText {
+    color: white;
+    font-size: 25px;
+    font-family: Roboto;
+    font-weight: 400;
+    line-height: 27.50px;
+    word-wrap: break-word
+}
+
+.buttonTextHowItWorks {
+    color: #23A7D0;
+    font-size: 25px;
+    font-family: Roboto;
+    font-weight: 400;
+    line-height: 27.50px;
+    word-wrap: break-word
+}
+
+.buttonTextHowItWorks:hover {
+    color: white;
+}
+
+.buttonText:hover {
+    color: white;
+}
+
+.buttonTextGenerateResponse {
+    color: white;
+    font-size: 25px;
+    font-family: Roboto;
+    font-weight: 400;
+    line-height: 27.50px;
+    word-wrap: break-word
+}
+
+.RightSide {
+
+    width: 600px;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    right: 0;
+    /* Align to right */
+    /* padding-right: 150px; */
+
+
+}
+
+.landingImage {
+    width: 450px;
+    height: 400px;
+    position: absolute;
+    /* box-shadow: 10px 10px 4px black; */
+    border-radius: 43px;
+    /* border: 1px #1E1E1E solid */
+}
+
+.Rectangle24 {
+    /* position: absolute; */
+    width: 100vw;
+    opacity: 0.9;
+    height: 25px;
+    left: 0;
+    bottom: 0;
+    /* Positions it at the bottom */
+    mix-blend-mode: screen;
+    background: linear-gradient(90deg, #2F1E6C 0%, #03A0BE 46%, #985990 100%);
+    box-shadow: 10.8px 10.8px 10.8px;
+    filter: blur(10.8px);
+}
+
+.landingImage1 {
+    width: 550px;
+    height: 450px;
+    position: absolute;
+    /* box-shadow: 10px 10px 4px black; */
+    border-radius: 43px;
+    /* border: 1px #1E1E1E solid */
+}
+
+.new{
+    display: inline;
+    position: absolute;
+    font-size: 23px;
+    margin-top: 103px;
+    margin-left: 202px;
 }
